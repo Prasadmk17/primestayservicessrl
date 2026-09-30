@@ -1,0 +1,66 @@
+/* Custom styles for Prime Stay Services SRL */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1E293B; /* slate-800 */
+    background-color: #F9FAFB; /* gray-50 */
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 50;
+}
+
+/* Floating Widget Animation */
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-widget {
+    animation: pulse-ring 2s infinite;
+}
+
+.whatsapp-widget:hover {
+    animation: none;
+    transform: scale(1.1);
+}
+
+/* Subtle transitions */
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Gradient text */
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #0284C7, #059669);
+}
