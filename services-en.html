@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Prime Stay Services</title>
+    <meta name="description" content="Discover our cleaning services: Short-Term Rental (Airbnb), Residential, Deep Clean, Post-Construction and Offices.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0284C7', // sky-600
+                        accent: '#059669', // emerald-600
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="antialiased bg-gray-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-28">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index-en.html" class="flex items-center">
+                        <img src="assets/Primestay%20Logo.png" alt="Prime Stay Services Logo" class="h-24 w-auto max-w-[250px] object-contain drop-shadow-md">
+                    </a>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index-en.html" class="text-slate-600 font-medium hover:text-primary transition-colors">Home</a>
+                    <a href="services-en.html" class="text-primary font-medium hover:text-accent transition-colors">Services</a>
+                    <a href="about-en.html" class="text-slate-600 font-medium hover:text-primary transition-colors">About Us</a>
+                    <a href="contact-en.html" class="text-slate-600 font-medium hover:text-primary transition-colors">Contact</a>
+                    
+                    <div class="flex items-center gap-4 border-l border-gray-300 pl-4">
+                        <a href="services.html" class="flex items-center gap-1 text-sm font-semibold text-slate-700 hover:text-primary transition">
+                            <i class="ph ph-globe text-lg"></i> <span>RO</span>
+                        </a>
+                        <a href="contact-en.html" class="bg-primary hover:bg-sky-700 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Get a Quote</a>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <a href="services.html" class="text-sm font-semibold text-slate-700 hover:text-primary transition">RO</a>
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="ph ph-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index-en.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50">Home</a>
+                <a href="services-en.html" class="block px-3 py-3 rounded-md text-base font-medium text-primary bg-sky-50">Services</a>
+                <a href="about-en.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50">About Us</a>
+                <a href="contact-en.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50">Contact</a>
+                <a href="contact-en.html" class="block px-3 py-3 mt-4 text-center rounded-full text-base font-medium bg-primary text-white">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold mb-4">Our Services</h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">We offer a full range of cleaning services tailored to your specific needs. Discover Prime Stay quality.</p>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover-scale flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 bg-sky-100 text-primary rounded-2xl flex items-center justify-center">
+                                <i class="ph ph-house-line text-4xl"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-sm font-bold px-4 py-2 rounded-full">From 180 RON</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-3">Short-Term Rental Cleaning (Airbnb)</h3>
+                        <p class="text-slate-600 mb-6">Complete turnover service for hosts. We ensure the property is impeccable for the next guests.</p>
+                        
+                        <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">What's included:</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Changing bed linen and towels</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Restocking consumables (soap, toilet paper, etc.)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Cleaning and sanitizing bathrooms and kitchens</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Vacuuming and mopping all floors</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-gray-100">
+                        <a href="contact-en.html?service=turistic" class="block w-full text-center bg-primary hover:bg-sky-500 text-white font-medium py-3 rounded-xl transition-colors">Request a Quote</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover-scale flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 bg-emerald-100 text-accent rounded-2xl flex items-center justify-center">
+                                <i class="ph ph-broom text-4xl"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-sm font-bold px-4 py-2 rounded-full">From 150 RON</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-3">Regular Maintenance Cleaning</h3>
+                        <p class="text-slate-600 mb-6">Ideal for houses and apartments, with a weekly or bi-weekly frequency, for an always fresh environment.</p>
+                        
+                        <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">What's included:</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Dusting all accessible surfaces</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Cleaning and sanitizing sanitary objects</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Cleaning the exterior of home appliances</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Trash removal</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-gray-100">
+                        <a href="contact-en.html?service=intretinere" class="block w-full text-center bg-primary hover:bg-sky-500 text-white font-medium py-3 rounded-xl transition-colors">Request a Quote</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover-scale flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 bg-sky-100 text-primary rounded-2xl flex items-center justify-center">
+                                <i class="ph ph-sparkle text-4xl"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-sm font-bold px-4 py-2 rounded-full">From 300 RON</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-3">Deep Cleaning & Post-Construction</h3>
+                        <p class="text-slate-600 mb-6">Intensive deep cleaning service. Perfect for spring cleaning, moving out, or post-renovation.</p>
+                        
+                        <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">What's included:</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Removing traces of paint, cement, grout (Post-construction)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Deep cleaning of joints, tiles, floorings</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Washing windows and frames (inside-outside)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Degreasing hard-to-reach surfaces</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-gray-100">
+                        <a href="contact-en.html?service=generala" class="block w-full text-center bg-primary hover:bg-sky-500 text-white font-medium py-3 rounded-xl transition-colors">Request a Quote</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover-scale flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 bg-emerald-100 text-accent rounded-2xl flex items-center justify-center">
+                                <i class="ph ph-buildings text-4xl"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-sm font-bold px-4 py-2 rounded-full">On request</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-3">Office & Commercial Cleaning</h3>
+                        <p class="text-slate-600 mb-6">We ensure a hygienic, organized, and professional work environment for your employees and clients.</p>
+                        
+                        <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">What's included:</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Wiping office equipment and workstations</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Sanitizing common areas (kitchens, meeting rooms)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Cleaning restrooms and restocking supplies</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Flexible schedule (outside business hours)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-gray-100">
+                        <a href="contact-en.html?service=birou" class="block w-full text-center bg-primary hover:bg-sky-500 text-white font-medium py-3 rounded-xl transition-colors">Request a Quote</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">What does the cleaning include? (Comparison)</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Comparative table to choose exactly the service you need.</p>
+            </div>
+            
+            <div class="overflow-x-auto rounded-2xl shadow-lg border border-gray-200">
+                <table class="min-w-full divide-y divide-gray-200 bg-white">
+                    <thead class="bg-slate-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-5 text-left text-sm font-bold text-slate-900 uppercase tracking-wider w-1/3">Activity</th>
+                            <th scope="col" class="px-6 py-5 text-center text-sm font-bold text-slate-900 uppercase tracking-wider">Regular</th>
+                            <th scope="col" class="px-6 py-5 text-center text-sm font-bold text-slate-900 uppercase tracking-wider">Deep Clean</th>
+                            <th scope="col" class="px-6 py-5 text-center text-sm font-bold text-slate-900 uppercase tracking-wider bg-sky-50 text-primary">Airbnb</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-sm">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Vacuuming / Mopping Floors</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50/50"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Dusting Surfaces</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">In Detail</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Sanitizing Bathrooms / Kitchen</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">Basic</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">Deep</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50/50">Deep</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Cleaning inside appliances</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Washing Windows (In-Out)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50/50">On Request</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Changing Linens</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50"><i class="ph-bold ph-check text-primary text-xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Restocking Consumables</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50/50"><i class="ph-bold ph-check text-primary text-xl"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <!-- Footer content exactly same as index -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index-en.html" class="inline-block mb-6">
+                        <img src="assets/Primestay%20Logo.png" alt="Prime Stay Services Logo" class="h-32 w-auto max-w-[300px] object-contain drop-shadow-lg">
+                    </a>
+                    <p class="text-slate-400 max-w-sm mb-6">Professional cleaning services in Romania. High standards for Airbnb, residential, and offices.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index-en.html" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="services-en.html" class="hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="about-en.html" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="contact-en.html" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-map-pin text-primary mt-1"></i>
+                            <span>Bucharest & Ilfov, Romania</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-phone text-primary mt-1"></i>
+                            <div class="flex flex-col gap-1">
+                                <a href="tel:+40768010595" class="hover:text-primary transition-colors">+40 768 010 595</a>
+                                <a href="tel:+40769133037" class="hover:text-primary transition-colors">+40 769 133 037</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ph-fill ph-envelope-simple text-primary"></i>
+                            <a href="mailto:contact@primestayservices.ro" class="hover:text-primary transition-colors">contact@primestayservices.ro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <div class="text-center md:text-left">
+                    <p>&copy; 2026 Prime Stay Services SRL. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/40700000000" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 whatsapp-widget transition-transform">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

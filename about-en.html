@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Prime Stay Services</title>
+    <meta name="description" content="Discover the story of Prime Stay Services SRL. Our values, guarantees, and why we are the perfect choice for cleaning in Romania.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0284C7', // sky-600
+                        accent: '#059669', // emerald-600
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="antialiased bg-gray-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-28">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index-en.html" class="flex items-center">
+                        <img src="assets/Primestay%20Logo.png" alt="Prime Stay Services Logo" class="h-24 w-auto max-w-[250px] object-contain drop-shadow-md">
+                    </a>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index-en.html" class="text-slate-600 font-medium hover:text-primary transition-colors">Home</a>
+                    <a href="services-en.html" class="text-slate-600 font-medium hover:text-primary transition-colors">Services</a>
+                    <a href="about-en.html" class="text-primary font-medium hover:text-accent transition-colors">About Us</a>
+                    <a href="contact-en.html" class="text-slate-600 font-medium hover:text-primary transition-colors">Contact</a>
+                    
+                    <div class="flex items-center gap-4 border-l border-gray-300 pl-4">
+                        <a href="about.html" class="flex items-center gap-1 text-sm font-semibold text-slate-700 hover:text-primary transition">
+                            <i class="ph ph-globe text-lg"></i> <span>RO</span>
+                        </a>
+                        <a href="contact-en.html" class="bg-primary hover:bg-sky-700 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Get a Quote</a>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-primary transition">RO</a>
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="ph ph-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index-en.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50">Home</a>
+                <a href="services-en.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50">Services</a>
+                <a href="about-en.html" class="block px-3 py-3 rounded-md text-base font-medium text-primary bg-sky-50">About Us</a>
+                <a href="contact-en.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50">Contact</a>
+                <a href="contact-en.html" class="block px-3 py-3 mt-4 text-center rounded-full text-base font-medium bg-primary text-white">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2670&auto=format&fit=crop" alt="Cleaning team" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold mb-6">Our Story</h1>
+            <p class="text-lg text-slate-300 max-w-3xl mx-auto">We are more than just a cleaning company. We are your trusted partner in maintaining a healthy, clean, and welcoming environment.</p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <img src="assets/about%20us.jpg" alt="Pristine interior" class="rounded-3xl shadow-2xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-primary text-sm font-semibold mb-6">
+                        About Prime Stay Services SRL
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-6">Excellence in every detail</h2>
+                    <p class="text-slate-600 mb-4 text-lg">
+                        Founded with a clear vision to raise the standards of cleaning services in Romania, <strong>Prime Stay Services SRL</strong> has quickly become a name of reference, especially in the short-term rental (Airbnb) cleaning niche.
+                    </p>
+                    <p class="text-slate-600 mb-8">
+                        We understand that time is your most valuable asset. That is why we aim to give you the peace of mind you need by completely taking over the care of cleaning. Whether it is a residential apartment, a short-term rental property, or an office space, our approach is always the same: obsessive attention to detail, promptness, and absolute professionalism.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="border-l-4 border-primary pl-4">
+                            <h4 class="font-heading font-bold text-2xl text-slate-900">500+</h4>
+                            <p class="text-slate-500 text-sm">Happy Clients</p>
+                        </div>
+                        <div class="border-l-4 border-accent pl-4">
+                            <h4 class="font-heading font-bold text-2xl text-slate-900">10k+</h4>
+                            <p class="text-slate-500 text-sm">Cleanings Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Our Core Values</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">The principles that guide our work every single day.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover-scale">
+                    <div class="w-16 h-16 bg-sky-50 text-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-star text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Quality</h3>
+                    <p class="text-slate-600 text-sm">We do not compromise when it comes to our cleaning standards.</p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover-scale">
+                    <div class="w-16 h-16 bg-emerald-50 text-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-clock text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Punctuality</h3>
+                    <p class="text-slate-600 text-sm">We respect your time. We are always there at the agreed time, without delays.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover-scale">
+                    <div class="w-16 h-16 bg-sky-50 text-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-handshake text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Trust</h3>
+                    <p class="text-slate-600 text-sm">We build long-term relationships based on transparency and mutual respect.</p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover-scale">
+                    <div class="w-16 h-16 bg-emerald-50 text-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ph-fill ph-drop text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 font-heading">Hygiene Standards</h3>
+                    <p class="text-slate-600 text-sm">We use strict protocols and premium products for complete sanitization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-16 bg-slate-900 text-white border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <i class="ph-fill ph-shield-check text-5xl text-accent mb-4"></i>
+                    <h4 class="text-xl font-bold font-heading mb-2">100% Satisfaction Guarantee</h4>
+                    <p class="text-slate-400 text-sm">If something is not perfect, we correct it for free within 24 hours.</p>
+                </div>
+                <div class="p-6">
+                    <i class="ph-fill ph-file-text text-5xl text-primary mb-4"></i>
+                    <h4 class="text-xl font-bold font-heading mb-2">Insured Services</h4>
+                    <p class="text-slate-400 text-sm">Company with civil liability insurance for your peace of mind.</p>
+                </div>
+                <div class="p-6">
+                    <i class="ph-fill ph-users text-5xl text-accent mb-4"></i>
+                    <h4 class="text-xl font-bold font-heading mb-2">Vetted Staff</h4>
+                    <p class="text-slate-400 text-sm">Background checks, rigorous training, and constant evaluations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index-en.html" class="inline-block mb-6">
+                        <img src="assets/Primestay%20Logo.png" alt="Prime Stay Services Logo" class="h-32 w-auto max-w-[300px] object-contain drop-shadow-lg">
+                    </a>
+                    <p class="text-slate-400 max-w-sm mb-6">Professional cleaning services in Romania. High standards for Airbnb, residential, and offices.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index-en.html" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="services-en.html" class="hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="about-en.html" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="contact-en.html" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-map-pin text-primary mt-1"></i>
+                            <span>Bucharest & Ilfov, Romania</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-phone text-primary mt-1"></i>
+                            <div class="flex flex-col gap-1">
+                                <a href="tel:+40768010595" class="hover:text-primary transition-colors">+40 768 010 595</a>
+                                <a href="tel:+40769133037" class="hover:text-primary transition-colors">+40 769 133 037</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <div class="text-center md:text-left">
+                    <p>&copy; 2026 Prime Stay Services SRL. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/40700000000" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 whatsapp-widget transition-transform">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

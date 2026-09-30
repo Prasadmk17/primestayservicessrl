@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii | Prime Stay Services</title>
+    <meta name="description" content="Descoperă serviciile noastre de curățenie: Regim Turistic (Airbnb), Rezidențială, Generală, După Constructor și Birouri.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0284C7', // sky-600
+                        accent: '#059669', // emerald-600
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="antialiased bg-gray-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-28">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/Primestay%20Logo.png" alt="Prime Stay Services Logo" class="h-24 w-auto max-w-[250px] object-contain drop-shadow-md">
+                    </a>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 font-medium hover:text-primary transition-colors" data-i18n="nav-home">Acasă</a>
+                    <a href="services.html" class="text-primary font-medium hover:text-accent transition-colors" data-i18n="nav-services">Servicii</a>
+                    <a href="about.html" class="text-slate-600 font-medium hover:text-primary transition-colors" data-i18n="nav-about">Despre Noi</a>
+                    <a href="contact.html" class="text-slate-600 font-medium hover:text-primary transition-colors" data-i18n="nav-contact">Contact</a>
+                    
+                    <div class="flex items-center gap-4 border-l border-gray-300 pl-4">
+                        <a href="services-en.html" class="flex items-center gap-1 text-sm font-semibold text-slate-700 hover:text-primary transition">
+                            <i class="ph ph-globe text-lg"></i> <span>EN</span>
+                        </a>
+                        <a href="contact.html" class="bg-primary hover:bg-sky-700 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5" data-i18n="cta-quote">Cere Ofertă</a>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <a href="services-en.html" class="text-sm font-semibold text-slate-700 hover:text-primary transition">EN</a>
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
+                        <i class="ph ph-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50" data-i18n="nav-home">Acasă</a>
+                <a href="services.html" class="block px-3 py-3 rounded-md text-base font-medium text-primary bg-sky-50" data-i18n="nav-services">Servicii</a>
+                <a href="about.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50" data-i18n="nav-about">Despre Noi</a>
+                <a href="contact.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-primary hover:bg-sky-50" data-i18n="nav-contact">Contact</a>
+                <a href="contact.html" class="block px-3 py-3 mt-4 text-center rounded-full text-base font-medium bg-primary text-white" data-i18n="cta-quote">Cere Ofertă</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="pt-32 pb-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-extrabold mb-4">Serviciile Noastre</h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">Oferim o gamă completă de servicii de curățenie adaptate nevoilor tale specifice. Descoperă calitatea Prime Stay.</p>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover-scale flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 bg-sky-100 text-primary rounded-2xl flex items-center justify-center">
+                                <i class="ph ph-house-line text-4xl"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-sm font-bold px-4 py-2 rounded-full">De la 180 RON</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-3">Curățenie Regim Turistic (Airbnb)</h3>
+                        <p class="text-slate-600 mb-6">Serviciu complet de turnover pentru gazde. Ne asigurăm că proprietatea este impecabilă pentru următorii oaspeți.</p>
+                        
+                        <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">Ce include:</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Schimbarea lenjeriei și a prosoapelor</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Completarea consumabilelor (săpun, hârtie, etc.)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Curățarea și dezinfectarea băilor și bucătăriei</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Aspirarea și spălarea tuturor pardoselilor</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-gray-100">
+                        <a href="contact.html?service=turistic" class="block w-full text-center bg-primary hover:bg-sky-500 text-white font-medium py-3 rounded-xl transition-colors">Solicită Ofertă</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover-scale flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 bg-emerald-100 text-accent rounded-2xl flex items-center justify-center">
+                                <i class="ph ph-broom text-4xl"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-sm font-bold px-4 py-2 rounded-full">De la 150 RON</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-3">Curățenie de Întreținere</h3>
+                        <p class="text-slate-600 mb-6">Ideală pentru case și apartamente, cu o frecvență săptămânală sau bi-lunară, pentru un mediu mereu proaspăt.</p>
+                        
+                        <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">Ce include:</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Ștergerea prafului de pe toate suprafețele accesibile</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Curățarea și igienizarea obiectelor sanitare</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Curățarea exteriorului electrocasnicelor</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Evacuarea gunoiului</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-gray-100">
+                        <a href="contact.html?service=intretinere" class="block w-full text-center bg-primary hover:bg-sky-500 text-white font-medium py-3 rounded-xl transition-colors">Solicită Ofertă</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover-scale flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 bg-sky-100 text-primary rounded-2xl flex items-center justify-center">
+                                <i class="ph ph-sparkle text-4xl"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-sm font-bold px-4 py-2 rounded-full">De la 300 RON</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-3">Curățenie Generală si post-construcție</h3>
+                        <p class="text-slate-600 mb-6">Serviciu intensiv de curățare în profunzime. Perfect pentru curățenia de primăvară, mutare sau post-renovare.</p>
+                        
+                        <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">Ce include:</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Îndepărtarea urmelor de vopsea, ciment, chit (După constructor)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Curățarea în profunzime a rosturilor, faianței, gresiei</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Spălarea geamurilor și a ramelor (interior-exterior)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Degresarea suprafețelor greu accesibile</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-gray-100">
+                        <a href="contact.html?service=generala" class="block w-full text-center bg-primary hover:bg-sky-500 text-white font-medium py-3 rounded-xl transition-colors">Solicită Ofertă</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover-scale flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-16 h-16 bg-emerald-100 text-accent rounded-2xl flex items-center justify-center">
+                                <i class="ph ph-buildings text-4xl"></i>
+                            </div>
+                            <span class="bg-slate-100 text-slate-800 text-sm font-bold px-4 py-2 rounded-full">La cerere</span>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-slate-900 mb-3">Curățenie Birouri si Spații Comerciale</h3>
+                        <p class="text-slate-600 mb-6">Asigurăm un mediu de lucru igienic, organizat și profesionist pentru angajații și clienții tăi.</p>
+                        
+                        <h4 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider">Ce include:</h4>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Ștergerea echipamentelor de birou și a stațiilor de lucru</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Igienizarea spațiilor comune (bucătării, săli de ședințe)</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Curățarea grupurilor sanitare și refacerea stocurilor</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-600">
+                                <i class="ph-fill ph-check-circle text-accent mt-0.5"></i>
+                                <span>Program flexibil (în afara orelor de program)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-slate-50 border-t border-gray-100">
+                        <a href="contact.html?service=birou" class="block w-full text-center bg-primary hover:bg-sky-500 text-white font-medium py-3 rounded-xl transition-colors">Solicită Ofertă</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Ce include curățenia? (Comparație)</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Tabel comparativ pentru a alege exact serviciul de care ai nevoie.</p>
+            </div>
+            
+            <div class="overflow-x-auto rounded-2xl shadow-lg border border-gray-200">
+                <table class="min-w-full divide-y divide-gray-200 bg-white">
+                    <thead class="bg-slate-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-5 text-left text-sm font-bold text-slate-900 uppercase tracking-wider w-1/3">Activitate</th>
+                            <th scope="col" class="px-6 py-5 text-center text-sm font-bold text-slate-900 uppercase tracking-wider">Întreținere</th>
+                            <th scope="col" class="px-6 py-5 text-center text-sm font-bold text-slate-900 uppercase tracking-wider">Generală</th>
+                            <th scope="col" class="px-6 py-5 text-center text-sm font-bold text-slate-900 uppercase tracking-wider bg-sky-50 text-primary">Regim Turistic</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-sm">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Aspirare / Spălare Podele</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50/50"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Ștergere Praf Suprafețe</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">În detaliu</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Igienizare Băi / Bucătărie</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">De bază</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center">Profundă</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50/50">Profundă</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Curățare interior electrocasnice</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Spălare Geamuri (Int-Ext)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center"><i class="ph-bold ph-check text-accent text-xl"></i></td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50/50">La cerere</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Schimbare Lenjerii</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50"><i class="ph-bold ph-check text-primary text-xl"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-slate-700 font-medium">Aprovizionare Consumabile</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center text-slate-300">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-center bg-sky-50/50"><i class="ph-bold ph-check text-primary text-xl"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <!-- Footer content exactly same as index -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="inline-block mb-6">
+                        <img src="assets/Primestay%20Logo.png" alt="Prime Stay Services Logo" class="h-32 w-auto max-w-[300px] object-contain drop-shadow-lg">
+                    </a>
+                    <p class="text-slate-400 max-w-sm mb-6">Servicii profesionale de curățenie în România. Standarde înalte pentru Airbnb, rezidențial și birouri.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Navigare</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-primary transition-colors">Acasă</a></li>
+                        <li><a href="services.html" class="hover:text-primary transition-colors">Servicii</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition-colors">Despre Noi</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-map-pin text-primary mt-1"></i>
+                            <span>București & Ilfov, România</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-phone text-primary mt-1"></i>
+                            <div class="flex flex-col gap-1">
+                                <a href="tel:+40768010595" class="hover:text-primary transition-colors">+40 768 010 595</a>
+                                <a href="tel:+40769133037" class="hover:text-primary transition-colors">+40 769 133 037</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <div class="text-center md:text-left">
+                    <p>&copy; 2026 Prime Stay Services SRL. Toate drepturile rezervate.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/40700000000" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 whatsapp-widget transition-transform">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
